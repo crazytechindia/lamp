@@ -33,7 +33,6 @@ mv phpMyAdmin-4.6.4-english /usr/share/phpmyadmin
 ln -s /usr/share/phpmyadmin /var/www/html/phpmyadmin
 rm -rf php*
 cd
-echo "My\$QLp@\$\$" /root/mysqlrootpass.txt
 wget -O /etc/fail2ban/jail.local http://repo.crazytechindia.com/conf/LAMP/jail.local
 wget -O /etc/fail2ban/filter.d/xmlrpc.conf http://repo.crazytechindia.com/conf/xmlrpc.conf
 wget -O /usr/local/bin/manage  http://repo.crazytechindia.com/script/ubuntulamp/manage
