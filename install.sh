@@ -15,6 +15,7 @@ a2enmod rewrite
 service apache2 restart
 service php5-fpm restart
 php5enmod curl
+rm -rf /etc/apache2/sites-enabled/*
 wget -O /etc/apache2/sites-available/default.conf http://repo.crazytechindia.com/conf/LAMP/default.conf
 cp /etc/apache2/sites-available/default.conf /etc/apache2/sites-enabled/
 service php5-fpm restart
